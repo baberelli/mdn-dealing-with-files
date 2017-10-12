@@ -21,8 +21,10 @@ strong{
   color: coral;
 }
 
-.pics {
-  border: 10px solid black;
+.pics, img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
