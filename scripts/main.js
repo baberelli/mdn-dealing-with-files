@@ -1,15 +1,15 @@
 var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello world!';
 
-var name = "Caleb";
-var age = 26;
-var alive = true;
 
-/* adds a hello alert pop-up */
-var myVariable = document.querySelector('h1');
-alert('hello!');
+var myImage = document.querySelector('img');
 
-//Creates annoying click pop-up
-document.querySelector('html').onclick = function() {
-    alert('Ouch! Stop poking me!');
+//Adds an image change click event
+myImage.onclick = function() {
+    var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/walrus-cleaners.jpeg') {
+      myImage.setAttribute ('src','images/walrus-buds.jpg');
+    } else {
+      myImage.setAttribute ('src','images/walrus-cleaners.jpeg');
+    }
 }
